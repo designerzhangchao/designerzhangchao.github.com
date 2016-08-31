@@ -1,0 +1,157 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p,div, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td,b {
+    margin: 0; padding: 0;
+    outline: none;
+}
+html{
+    font-size: 40px;
+    overflow-x: hidden;
+    
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    font-family:"Microsoft YaHei","Lucida Sans Unicode","Myriad Pro";
+    font-size:12px;
+    background-color: #ededed;
+}
+
+a {
+    text-decoration: none;
+    color:#333;
+    outline: none;
+}
+a:active, a:hover{
+    outline: none;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+em,i{
+    font-style: normal;
+}
+li {
+    list-style: none outside none;
+}
+.errorLine{
+    border: 1px solid #f36c65;
+}
+.table {
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table>tbody>tr>td{
+    border: none;
+}
+
+
+/*苹果手机默认样式清除 开始*/
+a, img, button, input, textarea, div {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+input[type="button"], input[type="submit"], input[type="reset"],select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.button {
+    border-radius: 0;
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+
+/*苹果手机默认样式清除 结束*/
+
+
+table{
+    border-spacing:0;
+    border-collapse:collapse;
+    border:0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after {
+    content:'';
+    display:block;
+    height:0;
+    clear:both;
+}
+
+.clearfix {
+    *zoom:1;
+}
+
+
+
+@media screen and (min-width:320px) {
+    html {
+        font-size: 42.6667px
+    }
+}
+@media screen and (min-width:360px) {
+    html {
+        font-size: 48px
+    }
+}
+
+@media screen and (min-width:375px) {
+    html {
+        font-size: 50px
+    }
+}
+
+
+@media screen and (min-width:414px) {
+    html {
+        font-size: 55.2px
+    }
+}
+
+@media screen and (min-width:424px) {
+    html {
+        font-size: 56.5333px
+    }
+}
+
+@media screen and (min-width:480px) {
+    html {
+        font-size: 64px
+    }
+}
+
+@media screen and (min-width:540px) {
+    html {
+        font-size: 72px
+    }
+}
+
+@media screen and (min-width:720px) {
+    html {
+        font-size: 96px
+    }
+}
+
+@media screen and (min-width:750px) {
+    html {
+        font-size: 100px
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,,minimum-scale=1,maximum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta content="telephone=no" name="format-detection">
+    <title>对话框</title>
+    <link rel="stylesheet" type="text/css" href="css/dialog.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+    <style type="text/css">
+        *{padding: 0; margin: 0; }
+        body{font-size: 12px; padding: 20px;}
+        button{display: block; width: 100%; padding: 10px; margin: 20px 0; background-color:;  }
+    </style>
+</head>
+<body>
+    <!-- <div class="g-dialog-container">
+        <div class="dialog-window">
+
+            <div class="dialog-header loading">
+                
+            </div>
+
+            <div class="dialog-content">
+                您是否要清空购物车
+            </div>
+
+            <div class="dialog-footer">
+                <button>取消</button>
+                <button class="red">关闭</button>
+                <button class="green">确定</button>
+            </div>
+        </div>
+    </div> -->
+    <button id="btn1">按钮1</button>
+    <button id="btn2">按钮2</button>
+    <button id="btn3">按钮3</button>
+    <button id="btn4">按钮4</button>
+    <button id="btn5">按钮5</button>
+    <button id="btn6">按钮6 </button>
+
+
+    <script src="js/zepto.1.2.0.js"></script>
+    <script src="js/dialog.js"></script>
+    <script>
+        var dialog = $.dialog(
+        {
+            //对话框的宽
+            //width:100,
+            //对话框的提示信息
+            message:"你还好吗？",
+            //对话框类型
+            type:"loading",
+            //按钮配置
+            buttons:[
+                {
+                    type:"red",
+                    text:"不好",
+                    callback:function(){
+                        alert(1)
+                        return false;
+                    }
+                },
+                {
+                    type:"green",
+                    text:"好啊",
+                    callback:function(){
+                         alert(2)
+                    }
+                }
+            ],
+            //弹出框延迟多久关闭
+            //delay:2000
+        
+        }
+        );
+    </script>
+</body>
+</html>
